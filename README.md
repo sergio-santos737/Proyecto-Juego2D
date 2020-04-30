@@ -1,2 +1,7 @@
 # Proyecto-Juego2D
- Repositorio Proyecto 2
+ 
+Este juego fue creado en conjunto entre Jhonantan Reyes y Sergio Santos y fue inspirado por los antiguos juegos de plataformas 2D. El juego tiene como objetivo ir subiendo en el nivel para alcanzar la moneda azul la cual te llevara al siguiente nivel, en cada nivel encontraras monedas amarillas que te daran puntos, si caes de alguna plataforma caeras en el vacio y esto te contara como una muerte y tendras que comenzar desde el comienzo, en caso de caigas al vacio desde el segundo nivel el juego te regresara al primer nivel y tendras que comenzar todo de nuevo, cada muerte reinicia el conteo de puntos que hayas conseguido, el punteo total así como el número de muertes que has sufrido apareceran al final del juego, este juego solamente cuenta con 2 niveles por lo que no es muy dificil, y es bastante intuitivo.
+
+Para poder ejecutar el programa del juego aparecera la pantalla de inicio con dos botones, el de inicio y salida, al iniciar deberas de mover al personaje utilizando las flechas direccionales del teclado, para poder poner pausa puedes utilizar tanto la tecla esc como Enter, las unicas formas de salir del juego son termiando los dos niveles y dar a salir en las opciones que aparecen de ultimo, o bien simplemente cerrando el programa.
+
+El juego fue creado con el motor grafico GodotEngine version 3.2.2, este motor usa un lenguaje de progrmaacion llamado GDScript el cual es muy parecido a Phyton, para poder ejercutar este juego es necesario utilizar el GodotEngine para poder abrir el juego y manipular su codigo, o tambien puede ser exportado a distintas platafomras como lo son windows, mac, HTML5 y android. 
