@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/new_dynamicfont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://escenario/ponerpausa.gd" type="Script" id=4]
+
+[node name="ponerpausa" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menupausa" type="ColorRect" parent="."]
+visible = false
+margin_right = 799.0
+margin_bottom = 599.0
+color = Color( 0, 0, 0, 0.247059 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="titulol" type="Label" parent="menupausa"]
+margin_left = 364.422
+margin_top = 209.12
+margin_right = 455.422
+margin_bottom = 240.12
+custom_fonts/font = ExtResource( 2 )
+text = "PAUSA"
+__meta__ = {
+"_edit_use_anchors_": false
+}

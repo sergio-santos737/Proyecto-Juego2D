@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://escenario/salida.gd" type="Script" id=2]
+[ext_resource path="res://escenario/inicio.gd" type="Script" id=3]
+[ext_resource path="res://assets/cavern-background-blue-free-vector.jpg" type="Texture" id=4]
+[ext_resource path="res://escenario/gambeover.gd" type="Script" id=5]
+[ext_resource path="res://audio/bubbly-clouds-kirbys-dream-land.ogg" type="AudioStream" id=6]
+
+[node name="gameover" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -3.0
+margin_bottom = -2.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -4.41174
+margin_bottom = -4.41174
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TITULO" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -149.155
+margin_top = 139.143
+margin_right = 128.845
+margin_bottom = 180.143
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "GRASIAS POR JUGAR "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -127.277
+margin_top = 201.999
+margin_right = 107.723
+margin_bottom = 242.999
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0705882, 0.0823529, 0.286275, 1 )
+text = "PUNTOS %s.
+MUERTES %s. "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu" type="VBoxContainer" parent="."]
+margin_left = 271.309
+margin_top = 379.636
+margin_right = 542.309
+margin_bottom = 460.636
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inicio" type="Button" parent="menu"]
+margin_right = 271.0
+margin_bottom = 38.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "JUGAR DE NUEVO"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="salida" type="Button" parent="menu"]
+margin_top = 42.0
+margin_right = 271.0
+margin_bottom = 81.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "SALIR"
+script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.182
+autoplay = true
+[connection signal="button_up" from="menu/inicio" to="menu/inicio" method="_on_inicio_button_up"]
+[connection signal="button_up" from="menu/salida" to="menu/salida" method="_on_salida_button_up"]

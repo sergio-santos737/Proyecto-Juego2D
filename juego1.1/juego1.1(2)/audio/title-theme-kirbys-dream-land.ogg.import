@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/title-theme-kirbys-dream-land.ogg-b3e03260deedf7376bea449fe925cf6f.oggstr"
+
+[deps]
+
+source_file="res://audio/title-theme-kirbys-dream-land.ogg"
+dest_files=[ "res://.import/title-theme-kirbys-dream-land.ogg-b3e03260deedf7376bea449fe925cf6f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
